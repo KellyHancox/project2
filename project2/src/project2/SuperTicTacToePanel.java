@@ -90,6 +90,10 @@ public class SuperTicTacToePanel extends JPanel {
 		}
 		right.add(quitButton);
 		right.add(undoButton);
+		
+		if(humanFirst == false) {
+			game.move();
+		}
 
 		displayBoard();
 
